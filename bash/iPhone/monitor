@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function drawLine() {
+    for ((i=0; i<40; i++)) {
+        line=$line"-"
+    }
+    echo $line
+}
+
+while [ true ] 
+do
+    drawLine 
+    echo $(date)
+    host=google.com
+    if (ping -c1 $host) then
+        echo "Connection alive" 
+    fi 
+    sleep 5m 
+done
