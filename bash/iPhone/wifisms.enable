@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if WifiSMS-ON file exists 
+if [ ! -f /private/var/tmp/WifiSMS-ON ];
+then
+    # Enable WifiSMS
+    /private/var/mobile/Library/SBSettings/Commands/com.WifiSMS.enable
+    echo "WifiSMS enabled"
+else
+    echo "WifiSMS already enabled"
+fi

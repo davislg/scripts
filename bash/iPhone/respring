@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Respring
+killall -HUP SpringBoard
