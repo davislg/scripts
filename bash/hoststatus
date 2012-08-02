@@ -1,5 +1,5 @@
 #!/bin/bash
-HOSTS="google.com maralosophy.org"
+HOSTS="google.com" 
 COUNT=4
 for myHost in $HOSTS
 do
